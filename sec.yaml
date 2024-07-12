@@ -4,10 +4,9 @@ metadata:
   name: db-secrets
   namespace: hatoon-namespace
 type: Opaque
-data:
-  MYSQL_ROOT_PASSWORD: bXlyb290cGFzc3dvcmQ= # myrootpassword
-  MYSQL_DATABASE: bXlkYXRhYmFzZQ== # mydatabase
-  MYSQL_USER: bXl1c2VybmFtZQ== # myusername
-  MYSQL_PASSWORD: bXlwYXNzd29yZA== # mypassword
-  WORDPRESS_DB_USER: cm9vdA== # root
-  #WORDPRESS_DB_PASSWORD: bXlyb290cGFzc3dvcmQ= # myrootpassword ^match
+stringData:
+  MYSQL_ROOT_PASSWORD: pass
+  MYSQL_DATABASE: wordpress 
+  WORDPRESS_DB_HOST: mysql
+  WORDPRESS_DB_USER: root 
+  WORDPRESS_DB_PASSWORD: pass
